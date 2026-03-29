@@ -1,0 +1,1 @@
+import pandas as pds= pd.Series(['apple','banana','apple','orange'])# convert to categoricalcat_s = s.astype('category')#display category codesprint(cat_s.cat.codes)

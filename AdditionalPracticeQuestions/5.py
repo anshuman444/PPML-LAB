@@ -1,0 +1,1 @@
+import pandas as pds = pd.Series(['apple', 'banana', 'apple', 'orange'])p = pd.Series(['lion', 'cat','dog','tiger', 'monkey', 'dog', 'cat'])#convert to categoricalcat_s = s.astype('categorical')print(cat_s)animal = p.astype('categorical')print(animal)#Display category codesprint(cat_s.cat.codes)print(animal.cat.codes)
