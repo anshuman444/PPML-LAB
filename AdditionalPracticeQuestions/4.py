@@ -1,1 +1,8 @@
-import pandas as pds= pd.Series(['apple','banana','apple','orange'])# convert to categoricalcat_s = s.astype('category')#display category codesprint(cat_s.cat.codes)
+import pandas as pd
+s= pd.Series(['apple','banana','apple','orange'])
+
+# convert to categorical
+cat_s = s.astype('category')
+
+#display category codes
+print(cat_s.cat.codes)

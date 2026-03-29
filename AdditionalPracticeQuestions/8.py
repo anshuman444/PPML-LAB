@@ -1,1 +1,9 @@
-# add transpose function heredf_T = df.Tprint("Original DataFrame:")print(df)print("\nTransposed DataFrame:")print(df_T)
+# add transpose function here
+
+df_T = df.T
+
+print("Original DataFrame:")
+print(df)
+
+print("\nTransposed DataFrame:")
+print(df_T)

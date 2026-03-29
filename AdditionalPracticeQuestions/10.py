@@ -1,1 +1,17 @@
-import pandas as pd# Simple sales datasetdata = {-á -á 'customer_id': [101, 102, 101, 103, 102, 101],-á -á 'salesman_id': [1, 2, 1, 3, 2, 2],-á -á 'amount': [500, 300, 200, 400, 150, 250]	}df = pd.DataFrame(data)print("Original DataFrame:")print(df)# Group by customer_id and salesman_id and count rowsresult = df.groupby(['customer_id', 'salesman_id']).size().reset_index(name='count')#Group GåÆ Count rows GåÆ Convert to table(INTO A PROPERDATAFRAME)print("\nGrouped Count:")print(result)
+import pandas as pd
+
+# Simple sales dataset
+data = {
+Â  Â  'customer_id': [101, 102, 101, 103, 102, 101],
+Â  Â  'salesman_id': [1, 2, 1, 3, 2, 2],
+Â  Â  'amount': [500, 300, 200, 400, 150, 250]
+	}
+
+df = pd.DataFrame(data)
+print("Original DataFrame:")
+print(df)
+# Group by customer_id and salesman_id and count rows
+result = df.groupby(['customer_id', 'salesman_id']).size().reset_index(name='count')
+#Group â†’ Count rows â†’ Convert to table(INTO A PROPERDATAFRAME)
+print("\nGrouped Count:")
+print(result)
